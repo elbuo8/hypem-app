@@ -1,24 +1,68 @@
-.container {
+body {
+  margin:0;
+}
 
+.container {
+  margin: 0 auto;
+  width: 320px;
+  max-width: 480px; /* check s4 */
 }
 
 .songInfo {
-  position: absolute;
+  position: relative;
+  margin: 0;
   top: 0px;
   left: 0px;
   width: 320px;
   min-width: 320px;
   background: -webkit-linear-gradient(top, #8fc400 0%,#8fc400 100%);
-}
-
-.songName, .songArtist{
-  position: relative;
-  top: -15px;
   text-align: center;
   font-family: arial;
   letter-spacing: -1px;
+  color: rgb(237, 247, 238);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+#songName {
+  position: relative;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+#songArtist {
+  position: relative;
+  margin: 0;
+}
+
+.mediaControl {
+  position: absolute;
+}
+
+#nextSong {
+  color: #8fc400;
+  font-size: 20px;
+  width: 35px;
+  position: absolute;
+  left: 285px;
+  height:320px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+#previousSong {
+  font-size: 20px;
+  color: #8fc400;
+  width: 35px;
+  height: 320px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.mediaPlayer {
+  display: none;
 }
 
 .songArtwork {
-  position: absolute;
+  position: relative;
 }

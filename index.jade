@@ -2,6 +2,7 @@
 html
   head
     title='Hypem Player'
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel="stylesheet", type="text/css", href="css/style.css")
     script( type="text/javascript", charset="utf-8", src='js/jquery.min.js')
     script(type="text/javascript", src="js/underscore.min.js")
@@ -9,18 +10,18 @@ html
   body
     div.container
       div.songInfo
-        div.songName
-          p#songName
-        div.songArtist
-          p#songArtist
+        p#songName
+        p#songArtist
       div.songArtwork
+        div.mediaControl
+          button#nextSong(type="button") >
+          button#previousSong(type='button') <
         img#songArtwork()
+
 
       div.mediaPlayer
         audio#player(controls)
-      div.mediaControl
-        button#nextSong(type="button") ->
-        button#previousSong(type='button') <-
+
 
       div#playListController
         button#popular(type='button', disabled) Popular
@@ -87,6 +88,15 @@ html
         getCurrentPlaylist: () =>
           @currentList
 
+        playController: () =>
+          player = document.getElementById('player')
+          if player.paused
+            player.play()
+            player.setAttribute('autoplay', 'autoplay')
+          else
+            player.pause()
+
+
       player = new Player
 
       $('#playListController').click (e) ->
@@ -101,8 +111,12 @@ html
       $('#previousSong').click (e) ->
         player.previousSongController()
 
+      $('#songArtwork').click (e) ->
+        player.playController()
+
       $('#player').bind 'ended', () ->
         player.nextSongController()
+
 
 
 

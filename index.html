@@ -1,10 +1,11 @@
-<!DOCTYPE html><html><head><title>Hypem Player</title><link rel="stylesheet" type="text/css" href="css/style.css"><script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script><script type="text/javascript" src="js/underscore.min.js"></script><script src="cordova-2.7.0.js"></script></head><body><div class="container"><div class="songInfo"><div class="songName"><p id="songName"></p></div><div class="songArtist"><p id="songArtist"></p></div></div><div class="songArtwork"><img id="songArtwork"></div><div class="mediaPlayer"><audio id="player" controls></audio></div><div class="mediaControl"><button id="nextSong" type="button">-></button><button id="previousSong" type="button"><-</button></div><div id="playListController"><button id="popular" type="button" disabled>Popular</button><button id="latest" type="button">Latest</button></div></div><script type="text/javascript">
+<!DOCTYPE html><html><head><title>Hypem Player</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="css/style.css"><script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script><script type="text/javascript" src="js/underscore.min.js"></script><script src="cordova-2.7.0.js"></script></head><body><div class="container"><div class="songInfo"><p id="songName"></p><p id="songArtist"></p></div><div class="songArtwork"><div class="mediaControl"><button id="nextSong" type="button">></button><button id="previousSong" type="button"><</button></div><img id="songArtwork"></div><div class="mediaPlayer"><audio id="player" controls></audio></div><div id="playListController"><button id="popular" type="button" disabled>Popular</button><button id="latest" type="button">Latest</button></div></div><script type="text/javascript">
 (function() {
   var Player, player,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   Player = (function() {
     function Player() {
+      this.playController = __bind(this.playController, this);
       this.getCurrentPlaylist = __bind(this.getCurrentPlaylist, this);
       this.playListController = __bind(this.playListController, this);
       this.previousSongController = __bind(this.previousSongController, this);
@@ -93,6 +94,18 @@
       return this.currentList;
     };
 
+    Player.prototype.playController = function() {
+      var player;
+
+      player = document.getElementById('player');
+      if (player.paused) {
+        player.play();
+        return player.setAttribute('autoplay', 'autoplay');
+      } else {
+        return player.pause();
+      }
+    };
+
     return Player;
 
   })();
@@ -113,6 +126,10 @@
 
   $('#previousSong').click(function(e) {
     return player.previousSongController();
+  });
+
+  $('#songArtwork').click(function(e) {
+    return player.playController();
   });
 
   $('#player').bind('ended', function() {
