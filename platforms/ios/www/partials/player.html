@@ -1,0 +1,27 @@
+<div class="list card">
+  <audio id="player"></audio>
+  <!--<div class="item range">
+    <input type="range" min="0" max="100" value="50" name="volume">
+  </div>-->
+  <div class="item">
+    <!--<img src={{ArtistImage}}>-->
+    <h2>{{SongName}}</h2>
+    <p>{{ArtistName}}</p>
+  </div>
+  <div class="item item-image">
+    <img src={{Cover}}>
+  </div>
+
+</div>
+
+<div class="tabs tabs-icon-only">
+  <div class="tab-item">
+    <i class="icon ion-chevron-left" ng-click="previousSong()"></i>
+  </div>
+  <div class="tab-item">
+    <i class="icon ion-arrow-right-b" ng-click="playerControl()"></i>
+  </div>
+  <div class="tab-item">
+    <i class="icon ion-chevron-right" ng-click="nextSong()"></i>
+  </div>
+</div>
