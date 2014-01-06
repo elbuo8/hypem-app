@@ -81,21 +81,23 @@ function ($scope, Playlist, $routeParams, $document, Media, $window, Async) {
   };
 
   $scope.playerControl = function () {
-    if (!isPlaying) {
+    if (!$scope.isPlaying) {
+      if (audio.getAttribute('src') === null) {
+        setPlayer();
+      }
       audio.play();
-      isPlaying = true;
+      $scope.isPlaying = true;
     } else {
       audio.pause();
-      isPlaying = false;
+      $scope.isPlaying = false;
     }
   };
 
   $scope.nextSong = function () {
-    console.log(queue[currentSongIdx]);
-    setPlayer();
     currentSongIdx++;
+    setPlayer();
     audio.play();
-    isPlaying = true;
+    $scope.isPlaying = true;
     if (currentSongIdx > 0 && currentSongIdx % 20 === 0) {
       getPlaylist(function () {
         console.log('updated!');
@@ -105,14 +107,15 @@ function ($scope, Playlist, $routeParams, $document, Media, $window, Async) {
 
   $scope.previousSong = function () {
     if (currentSongIdx > 0 ) {
-      setPlayer();
       currentSongIdx--;
+      setPlayer();
       audio.play();
-      isPlaying = true;
+      $scope.isPlaying = true;
     }
   };
 
   var setPlayer = function () {
+    console.log(queue[currentSongIdx]);
     $scope.ArtistImage = queue[currentSongIdx].thumb_url_artist;
     $scope.ArtistName = queue[currentSongIdx].artist;
     $scope.SongName = queue[currentSongIdx].title;
@@ -124,16 +127,19 @@ function ($scope, Playlist, $routeParams, $document, Media, $window, Async) {
   $scope.ArtistName = null;
   $scope.SongName = null;
   $scope.Cover = null;
-  var isPlaying = false;
+  $scope.isPlaying = false;
   var currentSongIdx = 0;
   var queue = [];
   var currentPage = 1;
   var audio = $window.document.getElementById('player');
   //init
   getPlaylist(function () {
-    $scope.nextSong();
+    $scope.playerControl();
   });
 
+  audio.addEventListener('ended', function () {
+    $scope.$apply($scope.nextSong());
+  });
 
 
 }]);

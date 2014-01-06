@@ -16,12 +16,13 @@
 
 <div class="tabs tabs-icon-only">
   <div class="tab-item">
-    <i class="icon ion-chevron-left" ng-click="previousSong()"></i>
+    <i class="icon ion-ios7-skipbackward" ng-click="previousSong()"></i>
   </div>
   <div class="tab-item">
-    <i class="icon ion-arrow-right-b" ng-click="playerControl()"></i>
+    <i class="icon ion-pause" ng-click="playerControl()" ng-show="isPlaying"></i>
+    <i class="icon ion-play" ng-click="playerControl()" ng-hide="isPlaying"></i>
   </div>
   <div class="tab-item">
-    <i class="icon ion-chevron-right" ng-click="nextSong()"></i>
+    <i class="icon ion-ios7-skipforward" ng-click="nextSong()"></i>
   </div>
 </div>
