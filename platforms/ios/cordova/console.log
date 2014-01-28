@@ -123,3 +123,39 @@ Terminating in response to SpringBoard's termination.
 2013-12-31 19:32:56.654 HypeM[62539:6c03] 19:32:56.654 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
 2013-12-31 19:32:56.750 HypeM[62539:e00b] 19:32:56.750 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
 Terminating in response to SpringBoard's termination.
+2014-01-19 20:55:30.152 HypeM[4291:80b] Multi-tasking -> Device: YES, App: YES
+2014-01-19 20:55:30.177 HypeM[4291:80b] Unlimited access to network resources
+2014-01-19 20:55:30.571 HypeM[4291:80b] Resetting plugins due to page load.
+2014-01-19 20:55:30.995 HypeM[4291:80b] setting movie path: 
+2014-01-19 20:55:31.128 HypeM[4291:80b] Finished load of: file:///Users/yamilasusta/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/3428B56F-06DD-43D8-BC74-A9D8DC2D4B8B/HypeM.app/www/index.html#/
+2014-01-19 20:57:10.980 HypeM[5196:80b] Multi-tasking -> Device: YES, App: YES
+2014-01-19 20:57:10.989 HypeM[5196:80b] Unlimited access to network resources
+2014-01-19 20:57:11.143 HypeM[5196:80b] Resetting plugins due to page load.
+2014-01-19 20:57:11.411 HypeM[5196:80b] setting movie path: 
+2014-01-19 20:57:11.517 HypeM[5196:80b] Finished load of: file:///Users/yamilasusta/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/3428B56F-06DD-43D8-BC74-A9D8DC2D4B8B/HypeM.app/www/index.html#/
+2014-01-19 21:03:53.747 HypeM[6182:80b] Multi-tasking -> Device: YES, App: YES
+2014-01-19 21:03:53.756 HypeM[6182:80b] Unlimited access to network resources
+2014-01-19 21:03:53.933 HypeM[6182:80b] Resetting plugins due to page load.
+2014-01-19 21:03:54.215 HypeM[6182:80b] setting movie path: 
+2014-01-19 21:03:54.378 HypeM[6182:80b] Finished load of: file:///Users/yamilasusta/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/3428B56F-06DD-43D8-BC74-A9D8DC2D4B8B/HypeM.app/www/index.html#/
+2014-01-19 21:03:56.289 HypeM[6182:80b] {"mediaid":"20y0f","artist":"Clean Bandit","title":"Rather Be Feat. Jess Glynne","dateposted":1386192531,"siteid":19978,"sitename":"Don't Need No Melody","posturl":"http://dontneednomelody.com/2013/12/04/new-clean-bandit-rather-be-feat-jess-glynne/","postid":2372130,"loved_count":3316,"posted_count":12,"thumb_url":"http://static.hypem.net/thumbs_new/22/2372130.jpg","thumb_url_medium":"http://static.hypem.net/thumbs_new/22/2372130_120.jpg","thumb_url_large":"http://static.hypem.net/thumbs_new/22/2372130_320.jpg","thumb_url_artist":null,"time":228,"description":"Spoiler Alert! DNNM favorites Clean Bandit are very high on my list of acts to watch in 2014. That playlist will be coming out shortly, but back to what is most important. “When I am with you, there’s no place I’d rather be” They have a new song out! The ","itunes_link":"http://hypem.com/go/itunes_search/Clean%20Bandit","url":"http://api.soundcloud.com/tracks/123173738/stream?consumer_key=nH8p0jYOkoVEZgJukRlG6w"}
+2014-01-19 21:03:58.602 HypeM[6182:80b] setting movie path: http://api.soundcloud.com/tracks/123173738/stream?consumer_key=nH8p0jYOkoVEZgJukRlG6w
+2014-01-19 21:03:58.608 HypeM[6182:80b] setting movie path: 
+2014-01-19 21:03:58.610 HypeM[6182:80b] setting movie path: http://api.soundcloud.com/tracks/123173738/stream?consumer_key=nH8p0jYOkoVEZgJukRlG6w
+2014-01-19 21:04:03.773 HypeM[6182:80b] Took background task assertion (6) for playback stall
+2014-01-19 21:04:03.830 HypeM[6182:80b] Took background task assertion (7) for playback stall
+2014-01-19 21:04:03.874 HypeM[6182:80b] Ending background task assertion (6) for playback stall
+2014-01-19 21:14:26.907 HypeM[7214:80b] Multi-tasking -> Device: YES, App: YES
+2014-01-19 21:14:26.915 HypeM[7214:80b] Unlimited access to network resources
+2014-01-19 21:14:27.081 HypeM[7214:80b] Resetting plugins due to page load.
+2014-01-19 21:14:27.318 HypeM[7214:80b] setting movie path: 
+2014-01-19 21:14:27.391 HypeM[7214:80b] Finished load of: file:///Users/yamilasusta/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/3428B56F-06DD-43D8-BC74-A9D8DC2D4B8B/HypeM.app/www/index.html#/
+2014-01-19 21:14:28.191 HypeM[7214:80b] {"mediaid":"20y0f","artist":"Clean Bandit","title":"Rather Be Feat. Jess Glynne","dateposted":1389294860,"siteid":15130,"sitename":"J(am) of the Day","posturl":"http://joftheday.com/post/72772346632/rather-be-clean-bandit-feat-jess-glynne","postid":2387717,"loved_count":3337,"posted_count":12,"thumb_url":"http://static.hypem.net/thumbs_new/5/2387717.jpg","thumb_url_medium":"http://static.hypem.net/thumbs_new/5/2387717_120.jpg","thumb_url_large":"http://static.hypem.net/thumbs_new/17/2390295_320.jpg","thumb_url_artist":null,"time":228,"description":"Band to watch, band to watch! Not only do these guys make great music, but they’re total...","itunes_link":"http://hypem.com/go/itunes_search/Clean%20Bandit","url":"http://api.soundcloud.com/tracks/123173738/stream?consumer_key=nH8p0jYOkoVEZgJukRlG6w"}
+2014-01-19 21:14:28.535 HypeM[7214:80b] setting movie path: http://api.soundcloud.com/tracks/123173738/stream?consumer_key=nH8p0jYOkoVEZgJukRlG6w
+2014-01-19 21:14:28.539 HypeM[7214:80b] setting movie path: 
+2014-01-19 21:14:28.541 HypeM[7214:80b] setting movie path: http://api.soundcloud.com/tracks/123173738/stream?consumer_key=nH8p0jYOkoVEZgJukRlG6w
+2014-01-27 09:21:18.828 HypeM[55345:80b] Multi-tasking -> Device: YES, App: YES
+2014-01-27 09:21:18.879 HypeM[55345:80b] Unlimited access to network resources
+2014-01-27 09:21:19.231 HypeM[55345:80b] Resetting plugins due to page load.
+2014-01-27 09:21:19.519 HypeM[55345:80b] setting movie path: 
+2014-01-27 09:21:19.607 HypeM[55345:80b] Finished load of: file:///Users/yamilasusta/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/3428B56F-06DD-43D8-BC74-A9D8DC2D4B8B/HypeM.app/www/index.html#/
